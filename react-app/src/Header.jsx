@@ -41,11 +41,11 @@ function Header () {
 					<Navbar.Toggle aria-controls="navbarNav" />
 					<Navbar.Collapse id="navbarNav">
 					  <Nav className="ms-auto">
-						<Nav.Link href="#home">Accueil</Nav.Link>
-						<Nav.Link href="#about">Services</Nav.Link>
-						<Nav.Link href="#projects">À propos</Nav.Link>
-						<Nav.Link href="#contact">Rendez-vous</Nav.Link>
-						<Nav.Link href="#contact">Contact</Nav.Link>
+						<Nav.Link href="#home" className="text-white">Accueil</Nav.Link>
+						<Nav.Link href="#about" className="text-white">Services</Nav.Link>
+						<Nav.Link href="#projects" className="text-white">À propos</Nav.Link>
+						<Nav.Link href="#contact" className="text-white">Rendez-vous</Nav.Link>
+						<Nav.Link href="#contact" className="text-white">Contact</Nav.Link>
 					  </Nav>
 					</Navbar.Collapse>
 			  </Container>

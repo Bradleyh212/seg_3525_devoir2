@@ -1,0 +1,10 @@
+.ms-auto { 
+	padding-right: 40px !important;
+}
+
+.nav-link:hover {
+	text-decoration: underline !important;
+	text-decoration-color: #168E23 !important;
+	text-decoration-thickness: 3px !important;
+	text-underline-offset: 3px !important;
+}
