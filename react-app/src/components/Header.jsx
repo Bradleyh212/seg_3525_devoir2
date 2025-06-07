@@ -1,8 +1,8 @@
 import React from 'react';
 import { Navbar, Nav, Container} from 'react-bootstrap';
 
-import logo from './assets/logo_vecteur.png';
-import peigne_ciseaux from './assets/peigne_ciseaux_vecteur.png';
+import logo from '../assets/logo_vecteur.png';
+import peigne_ciseaux from '../assets/peigne_ciseaux_vecteur.png';
 
 function Header () {
 		const acc_color = '#168E23'; // This is my accent color
@@ -40,16 +40,29 @@ function Header () {
 					</Navbar.Brand>
 					<Navbar.Toggle aria-controls="navbarNav" />
 					<Navbar.Collapse id="navbarNav">
-					  <Nav className="ms-auto">
-						<Nav.Link href="#home" className="text-white">Accueil</Nav.Link>
-						<Nav.Link href="#about" className="text-white">Services</Nav.Link>
-						<Nav.Link href="#projects" className="text-white">À propos</Nav.Link>
-						<Nav.Link href="#contact" className="text-white">Rendez-vous</Nav.Link>
-						<Nav.Link href="#contact" className="text-white">Contact</Nav.Link>
-					  </Nav>
+						<Nav className="ms-auto">
+							<Nav.Link href="#home" className="text-white">Accueil</Nav.Link>
+							<Nav.Link href="#about" className="text-white">Services</Nav.Link>
+							<Nav.Link href="#projects" className="text-white">À propos</Nav.Link>
+							<Nav.Link href="#contact" className="text-white">Rendez-vous</Nav.Link>
+							<Nav.Link href="#contact" className="text-white">Contact</Nav.Link>
+						</Nav>
+
+
 					</Navbar.Collapse>
-			  </Container>
+{/*						<div style={{ // For the address
+							backgroundColor: 'black',
+							color: 'white',
+							textAlign: 'center',
+							fontSize: '0.9rem',
+							padding: '4px 0'
+							}}>
+							123 rue Rideau, Ottawa, ON – 514 343-5854
+						</div>*/}
+				</Container>
 			</Navbar>
+
+
 
 		);
 }
