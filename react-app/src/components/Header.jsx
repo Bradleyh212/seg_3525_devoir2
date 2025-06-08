@@ -8,7 +8,7 @@ function Header () {
 		const acc_color = '#168E23'; // This is my accent color
 		return (
 			// Bootstrap Top Navbar
-			<Navbar expand="lg" bg="black" variant="dark" fixed="top">
+			<Navbar expand="lg" style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }} variant="dark" fixed="top">
 				<Container fluid>
 					<Navbar.Brand href="#" className="d-flex align-items-center"> 
 						<img // Adding logo
@@ -41,10 +41,10 @@ function Header () {
 					<Navbar.Toggle aria-controls="navbarNav" />
 					<Navbar.Collapse id="navbarNav">
 						<Nav className="ms-auto">
-							<Nav.Link href="#home" className="text-white">Accueil</Nav.Link>
+							<Nav.Link href="#home" className="text-white">Home</Nav.Link>
 							<Nav.Link href="#about" className="text-white">Services</Nav.Link>
 							<Nav.Link href="#projects" className="text-white">À propos</Nav.Link>
-							<Nav.Link href="#contact" className="text-white">Rendez-vous</Nav.Link>
+							<Nav.Link href="#contact" className="text-white">Meet the Team</Nav.Link>
 							<Nav.Link href="#contact" className="text-white">Contact</Nav.Link>
 						</Nav>
 
