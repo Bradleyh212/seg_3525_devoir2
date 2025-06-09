@@ -5,7 +5,7 @@ import andre from '../assets/andre.jpg';
 
 function Team() {
   return (
-    <div className="team-section bg-dark text-white py-5 px-4" id="team" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', }}>
+    <div className="team-section bg-dark text-white py-5 px-4" id="about" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', }}>
       <div className="text-center mb-5">
         <h2 className="fw-bold">Great Style Starts with a Skilled Barber Team</h2>
         <p className="text-light">Meet our expert barbers – masters of fades, trims, and style. Each brings passion, skill, and precision to every cut.</p>

@@ -9,6 +9,7 @@ function Footer() {
   return (
     <footer className="text-white text-center py-3" style={{ backgroundColor: '#022004' }}>
       <p className="mb-2">2025 “Royal Beauty Salon” All Rights Reserved</p>
+      <p> Website made by Bradley-Hans Desmornes & Anima Mehraj Mehrin</p>
       <button 
         onClick={handleScrollTop} 
         className="btn" 

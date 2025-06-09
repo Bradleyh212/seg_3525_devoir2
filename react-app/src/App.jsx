@@ -1,20 +1,38 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Header from './components/Header';
 import Hero from './components/Hero';
+import Services from './components/Services'
 import Team from './components/Team';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
+import Booking from './components/Booking'; // Make sure this path is correct!
+
+
 function App() {
 	return (
-		<div>
+		<Router>
 			<Header />
-			<Hero />
-			<Team />
-			<Contact />
-			<Footer />
-		</div>
 
+			<Routes>
+				<Route
+					path="/"
+					element={
+						<>
+							<Hero />
+							<Services />
+							<Team />
+							<Contact />
+							<Footer />
+						</>
+					}
+				/>
+
+				<Route path="/booking" element={<Booking />} />
+			</Routes>
+		</Router>
 	);
 
 }

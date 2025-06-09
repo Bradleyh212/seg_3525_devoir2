@@ -1,5 +1,7 @@
 import React from 'react';
 import { Navbar, Nav, Container} from 'react-bootstrap';
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 import logo from '../assets/logo_vecteur.png';
 import peigne_ciseaux from '../assets/peigne_ciseaux_vecteur.png';
@@ -41,24 +43,15 @@ function Header () {
 					<Navbar.Toggle aria-controls="navbarNav" />
 					<Navbar.Collapse id="navbarNav">
 						<Nav className="ms-auto">
-							<Nav.Link href="#home" className="text-white">Home</Nav.Link>
-							<Nav.Link href="#about" className="text-white">Services</Nav.Link>
-							<Nav.Link href="#projects" className="text-white">À propos</Nav.Link>
-							<Nav.Link href="#contact" className="text-white">Meet the Team</Nav.Link>
-							<Nav.Link href="#contact" className="text-white">Contact</Nav.Link>
+							<Link smooth to="/#home" className="nav-link text-white">Home</Link>
+							<Link smooth to="/#services" className="nav-link text-white">Services</Link>
+							<Link smooth to="/#about" className="nav-link text-white">Meet the Team</Link>
+							<Link smooth to="/#contact" className="nav-link text-white">Contact</Link>
 						</Nav>
 
 
 					</Navbar.Collapse>
-{/*						<div style={{ // For the address
-							backgroundColor: 'black',
-							color: 'white',
-							textAlign: 'center',
-							fontSize: '0.9rem',
-							padding: '4px 0'
-							}}>
-							123 rue Rideau, Ottawa, ON – 514 343-5854
-						</div>*/}
+
 				</Container>
 			</Navbar>
 
